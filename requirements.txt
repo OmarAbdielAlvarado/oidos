@@ -1,0 +1,5 @@
+sounddevice==0.4.6
+numpy==1.26.4
+faster-whisper==1.0.0
+tflite-runtime==2.14.0
+pyyaml==6.0.1

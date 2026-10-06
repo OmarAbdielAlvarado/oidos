@@ -1,0 +1,27 @@
+captura:
+  sample_rate: 16000
+  chunk_ms: 1000
+  canales: 1
+
+whisper:
+  modelo: "tiny"
+  idioma: "es"
+
+yamnet:
+  modelo: "modelos/yamnet.tflite"
+  umbral_confianza: 0.45
+  clases_clave:
+    doorbell: "timbre"
+    alarm_clock: "alarma"
+    baby_cry: "bebe"
+    smoke_detector_siren: "llama"
+    siren: "sirena"
+    knock: "puerta"
+
+vibro:
+  timbre:  [[200, 100], [200, 100], [200, 0]]
+  alarma:  [[800, 200], [800, 200], [800, 0]]
+  bebe:    [[150, 80], [150, 80], [150, 80], [150, 0]]
+  llama:   [[1500, 300], [1500, 0]]
+  puerta:  [[500, 200], [500, 0]]
+  sirena:  [[300, 100], [300, 100], [300, 100], [300, 0]]
